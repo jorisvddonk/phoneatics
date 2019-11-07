@@ -17,9 +17,12 @@ describe("Phoneatics", () => {
   })
 
   it("should support the repeating character 'p'", () => {
-    random.mockReturnValue(0);
+    random.mockReturnValue(1);
 
-    expect(phoneatics.generate("Sppp")).toBe("PPPP");
+    expect(phoneatics.generate("SppP")).toBe("TttT");
+    expect(phoneatics.generate("sppP")).toBe("tttT");
+    expect(phoneatics.generate("spPp")).toBe("ttTt");
+    expect(phoneatics.generate("GpGP")).toBe("WhhWhH");
   })
 
   it("should return a number between 0 and 9 when given a 'u' pattern character", () => {

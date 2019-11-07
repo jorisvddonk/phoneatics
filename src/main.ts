@@ -85,8 +85,10 @@ export default class Phoneatics {
       if (next_is_literal) {
         genChar = po
         next_is_literal = false
+      } else if (po === 'P') {
+        genChar = retString.slice(-1).toUpperCase()
       } else if (pl === 'p') {
-        genChar = retString.slice(-1)
+        genChar = retString.slice(-1).toLowerCase()
       } else if (po === 'u') {
         genChar = '' + random(0, 9)
       } else if (po === 'U') {
