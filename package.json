@@ -1,6 +1,6 @@
 {
   "name": "phoneatics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Name generation library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,7 @@
     "prepublish": "npm run-script clean && tsc"
   },
   "keywords": [
-    "noctis"
+    "string generation"
   ],
   "author": "Joris van de Donk <jorisvddonk@gmail.com>",
   "license": "MIT",
