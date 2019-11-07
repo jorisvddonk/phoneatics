@@ -1,5 +1,11 @@
 # Phoneatics - a string generator
 
+Installation:
+
+```
+npm install --save phoneatics
+```
+
 Usage:
 
 ```js
