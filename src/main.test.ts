@@ -10,9 +10,16 @@ describe("Phoneatics", () => {
   })
 
   it("should return a string when given a pattern", () => {
-    random.mockReturnValueOnce(0);
-    random.mockReturnValueOnce(0);
+    random.mockReturnValue(0);
+
     expect(phoneatics.generate("Sv")).toBe("Pa");
+    expect(phoneatics.generate("ovcsafnlgr")).toBe("aabpjfmlwq");
+  })
+
+  it("should support the repeating character 'p'", () => {
+    random.mockReturnValue(0);
+
+    expect(phoneatics.generate("Sppp")).toBe("PPPP");
   })
 
   it("should return a number between 0 and 9 when given a 'u' pattern character", () => {
