@@ -16,7 +16,8 @@
   "author": "Joris van de Donk <jorisvddonk@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash.difference": "^4.5.0",
+    "lodash.random": "^3.2.0"
   },
   "repository": {
     "url": "https://github.com/jorisvddonk/phoneatics.git"

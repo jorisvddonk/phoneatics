@@ -1,4 +1,5 @@
-import { random, difference } from 'lodash'
+import random from 'lodash.random'
+import difference from 'lodash.difference'
 
 type KeyAndValues = {
   key: string
