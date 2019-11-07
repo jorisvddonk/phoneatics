@@ -1,14 +1,11 @@
 import { random, difference, includes } from 'lodash'
-/* Name generation script
-     based on Phonetics (my own interpretation of them)
-  */
 
 type KeyAndValues = {
   key: string
   values: string[]
 }
 
-export default class Phonetics {
+export default class Phoneatics {
   public _unique_generate_cache: any[]
   private chargroups: {
     ordinary_vowels: KeyAndValues
