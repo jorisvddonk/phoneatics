@@ -1,4 +1,4 @@
-import { random, difference, includes } from 'lodash'
+import { random, difference } from 'lodash'
 
 type KeyAndValues = {
   key: string
@@ -6,7 +6,6 @@ type KeyAndValues = {
 }
 
 export default class Phoneatics {
-  public _unique_generate_cache: any[]
   private chargroups: {
     ordinary_vowels: KeyAndValues
     vowels: KeyAndValues
@@ -73,7 +72,6 @@ export default class Phoneatics {
         this.chargroups.glides.values
       ),
     }
-    this._unique_generate_cache = []
   }
 
   public generate(pattern) {
@@ -119,25 +117,4 @@ export default class Phoneatics {
     return retString
   }
 
-  public UGenerate(pattern) {
-    let generated
-    let icount = 0
-    while (generated === undefined) {
-      if (icount >= 1024) {
-        throw new Error("pattern exhausted")
-      }
-      generated = this.generate(pattern)
-      if (includes(this._unique_generate_cache, generated)) {
-        generated = undefined
-      } else {
-        this._unique_generate_cache.push(generated)
-      }
-      icount = icount + 1
-    }
-    return generated
-  }
-
-  public clearNameCache() {
-    this._unique_generate_cache = []
-  }
 }
