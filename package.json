@@ -23,11 +23,11 @@
     "url": "https://github.com/jorisvddonk/phoneatics.git"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.22",
-    "@types/node": "^12.7.3",
-    "jest": "^24.9.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.0",
+    "jest": "^30.5.2",
     "rimraf": "^3.0.0",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.2"
+    "ts-jest": "^29.4.14",
+    "typescript": "^5.9.0"
   }
 }
